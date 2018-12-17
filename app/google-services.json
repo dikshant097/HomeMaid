@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "601172775577",
+    "project_id": "firebase-homemaid"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601172775577:android:186ed154f9e969c4",
+        "android_client_info": {
+          "package_name": "com.rsi.homemaid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601172775577-m2jscc0jdsa5l3pkk5hgk4n8fbogtdeg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "601172775577-09pnhqooa3fs6smvp1ttr7mcrgbhm8at.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rsi.homemaid",
+            "certificate_hash": "1e1b438535e0cfb8436ef7d85454b532ba3e4293"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGS4Hht_TO0NYmwT-Pvyuw0qfSPAuENuI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

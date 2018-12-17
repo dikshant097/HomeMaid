@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/iv_verified"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/verified_icon"
+        android:layout_alignParentLeft="true"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <com.like.LikeButton
+            android:id="@+id/heart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon_size="22dp"
+            app:anim_scale_factor="2"
+            app:icon_type="heart"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/iv_verification_information"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_information"
+            android:padding="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seema Gupta"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/white"
+            android:background="@color/darkgreen"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+
+            <io.techery.properratingbar.ProperRatingBar
+                android:id="@+id/upperRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                app:prb_defaultRating="4"
+                app:prb_symbolicTickNormalColor="@android:color/darker_gray"
+                app:prb_symbolicTickSelectedColor="@color/orange"
+                app:prb_tickNormalDrawable="@drawable/ic_star_normal"
+                app:prb_tickSelectedDrawable="@drawable/ic_star_selected"
+                app:prb_totalTicks="5"
+                android:layout_toRightOf="@+id/tv_rating"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_rating_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="48 Ratings"
+                android:layout_toRightOf="@+id/upperRatingBar"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sabji Mandi, Parthala"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_religion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hindu"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26 years old"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Years Experience"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seema Gupta"
+            android:textStyle="normal"
+            android:textSize="30sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RG Residency"
+            android:textColor="@color/text_grey"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <io.techery.properratingbar.ProperRatingBar
+                android:id="@+id/lowerRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/sample_default_margin"
+                app:prb_defaultRating="1"
+                app:prb_tickNormalDrawable="@drawable/ic_star_normal"
+                app:prb_tickSelectedDrawable="@drawable/ic_star_selected"
+                app:prb_tickSpacing="@dimen/sample_prb_tick_spacing"
+                app:prb_totalTicks="5"
+
+                />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please rate your experience"
+                android:textSize="20sp"
+                android:textColor="@color/text_grey"
+                android:gravity="center"
+                />
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:hint="Write review"
+                android:inputType="textCapSentences"
+                android:backgroundTint="@color/grey"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:theme="@style/CircularProgress"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</LinearLayout>

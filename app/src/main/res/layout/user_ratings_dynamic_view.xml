@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:layout_marginTop="0dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_user_ratings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <helper.RoundedImageView
+            android:id="@+id/iv_users_ratings"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_stub" />
+
+        <TextView
+            android:id="@+id/tv_user_rating_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jasmeet"
+            android:layout_toRightOf="@+id/iv_users_ratings"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"/>
+
+        <io.techery.properratingbar.ProperRatingBar
+            android:id="@+id/upperRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            app:prb_defaultRating="4"
+            app:prb_tickNormalDrawable="@drawable/ic_star_normal"
+            app:prb_tickSelectedDrawable="@drawable/ic_star_selected"
+            app:prb_totalTicks="5"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_user_rating_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:text="Bulbul is very good in cooking food but sometimes she is not punctual and delay to cook the food. Apart from that you can hire her and make her in testing mode."/>
+
+
+    <TextView
+        android:id="@+id/tv_user_rating_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviewed on July 31, 2017"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/text_grey"/>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/text_grey"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

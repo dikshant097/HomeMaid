@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/tv_no_review_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No review available"
+            android:layout_marginTop="5dp"
+            android:visibility="visible"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_users_ratings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+       <!-- <include layout="@layout/user_ratings_dynamic_view" />-->
+
+
+        <!---->
+
+       <!-- <include layout="@layout/user_ratings_dynamic_view"/>-->
+
+
+        <!---->
+
+       <!-- <include layout="@layout/user_ratings_dynamic_view"/>-->
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_view_all_reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All Reviews"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_box"
+            android:paddingLeft="20dp"
+            android:visibility="gone"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:theme="@style/CircularProgress"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+</android.support.v7.widget.CardView>

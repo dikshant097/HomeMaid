@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_activity"
+    >
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/my_toolbar"
+            layout="@layout/toolbar_new" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rating_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container_toolbar"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:id="@+id/rate_maid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:textAlignment="center"
+            android:text="Rate Your Maid"
+            android:textSize="20sp"
+            android:textColor="@color/prussian_blue"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_background_white"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/favoriteh"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            />
+        <ImageView
+            android:id="@+id/rate_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating_container"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/search_maid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:textAlignment="center"
+            android:text="Search Maids"
+            android:textSize="20sp"
+            android:textColor="@color/prussian_blue"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_background_white"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/searchh"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            />
+        <ImageView
+            android:id="@+id/search_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_maid_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_container"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/add_maid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:textAlignment="center"
+            android:text="Add Your Maid"
+            android:textSize="20sp"
+            android:textColor="@color/prussian_blue"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_background_white"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_userh"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            />
+        <ImageView
+            android:id="@+id/add_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/track_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_maid_container"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/track_maid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:textAlignment="center"
+            android:text="Track Maid"
+            android:textSize="20sp"
+            android:textColor="@color/prussian_blue"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_background_white"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/compassh"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            />
+        <ImageView
+            android:id="@+id/track_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
